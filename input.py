@@ -2,7 +2,7 @@ import csv
 import requests
 
 # Open the CSV file
-with open('mydata.csv') as csv_file:
+with open('data.csv') as csv_file:
     csv_reader = csv.DictReader(csv_file)
 
     # Iterate over each row in the CSV file

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChartJS - BarGraph</title>
+    <style type="text/css">
+      #chart-container {
+        width: 640px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart-container">
+      <canvas id="mycanvas"></canvas>
+    </div>
+    <form id = "my-form" method="POST">
+    <label for="X">X Variable:</label><br>
+    <select id="x-variable" name="X">
+        <option value="date">Date</option>
+        <option value="windspeed">Wind Speed m/s</option>
+        <option value="airtemp">Air Temperature °C</option>
+        <option value="winddirection">Wind direction °</option>
+        <option value="humidity">Relative humidity %RH </option>
+        <option value="rainfall"> Rainfall mm hr</option>
+        <option value="shortwave">Downwelling shortwave radiation W m-2</option>
+        <option value="longwave">Downwelling longwave radiation W m-2</option>
+        <option value="surfacetemp">Sea surface temperature °C</option>
+        <option value="subsurfacetemp">Sea Subsurface temperature mS m-1</option>
+        <option value="current">Ocean Current  cm s-1 </option>
+        <option value="salinity">Salinity mS m-1</option>
+        <option value="waterpressure">Weater Pressure % of full range </option>
+    </select><br>
+    <label for="Y">Y Variable:</label><br>
+    <select id="y-variable" name="Y">
+        <option value="date">Date</option>
+        <option value="windspeed">Wind Speed m/s</option>
+        <option value="airtemp">Air Temperature °C</option>
+        <option value="winddirection">Wind direction °</option>
+        <option value="humidity">Relative humidity %RH </option>
+        <option value="rainfall"> Rainfall mm hr</option>
+        <option value="shortwave">Downwelling shortwave radiation W m-2</option>
+        <option value="longwave">Downwelling longwave radiation W m-2</option>
+        <option value="surfacetemp">Sea surface temperature °C</option>
+        <option value="subsurfacetemp">Sea Subsurface temperature mS m-1</option>
+        <option value="current">Ocean Current  cm s-1 </option>
+        <option value="salinity">Salinity mS m-1</option>
+        <option value="waterpressure">Weater Pressure % of full range </option>
+    </select><br>
+        <input type="submit" value="Submit">
+    </form>
+    <button id ="delete"> Delete database</button>
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-trendline"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
