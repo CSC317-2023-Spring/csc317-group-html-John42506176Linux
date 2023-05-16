@@ -35,7 +35,7 @@ setInterval(function() {
   const runID1 = $('#runID1').val();
   const runID2 = $('#runID2').val();
 
-  fetch(`http://localhost/view.php?runID=${encodeURIComponent(runID1)}`, {
+  fetch(`http://raspberrypi75.local/view.php?runID=${encodeURIComponent(runID1)}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -132,7 +132,7 @@ setInterval(function() {
   });
 
   // Make the GET request
-  fetch(`http://localhost/view.php?runID=${encodeURIComponent(runID2)}`, {
+  fetch(`http://raspberrypi75.local/view.php?runID=${encodeURIComponent(runID2)}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
