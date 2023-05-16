@@ -110,6 +110,9 @@ setInterval(function() {
           position: 'left'
         }
       },
+      animation: {
+          duration: 0
+      },
     };
 
     // Create the chart
@@ -212,6 +215,9 @@ setInterval(function() {
           type: 'linear',
           position: 'left'
         }
+      },
+      animation: {
+          duration: 0
       },
     };
 
