@@ -47,22 +47,22 @@ if ($result) {
     <rb></rb>
     <form id = "my-form" method="POST">
     <label for="runID1">Run ID 1:</label><br>
-    <select id="runID1" name="runID1">
+    <!-- <select id="runID1" name="runID1">
         <?php
         // Loop through the runID values and create option tags
-        foreach ($runIDs as $runID) {
-            echo "<option value='$runID'>$runID</option>";
-        }
+        // foreach ($runIDs as $runID) {
+        //     echo "<option value='$runID'>$runID</option>";
+        // }
         ?>
-    </select>
-    <label for="runID2">Run ID 2:</label><br>
+    </select> -->
+    <!-- <label for="runID2">Run ID 2:</label><br>
     <select id="runID2" name="runID2">
         <?php
         // Loop through the runID values and create option tags
-        foreach ($runIDs as $runID) {
-            echo "<option value='$runID'>$runID</option>";
-        }
-        ?>
+        // foreach ($runIDs as $runID) {
+        //     echo "<option value='$runID'>$runID</option>";
+        // }
+        ?> -->
     </select>
     <input type="submit" value="Submit">
     </form>
@@ -72,6 +72,6 @@ if ($result) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-trendline"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <!-- <script type="text/javascript" src="app.js"></script> -->
   </body>
 </html>
