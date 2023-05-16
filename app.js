@@ -222,7 +222,7 @@ setInterval(function() {
     };
 
     // Create the chart
-    if (isChart1Set) {
+    if (isChart2Set) {
       prevChartL2.destroy();
       prevChartR2.destroy();
     }
@@ -240,7 +240,7 @@ setInterval(function() {
       options: options
     });
 
-    isChart1Set = true;
+    isChart2Set = true;
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
