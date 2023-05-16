@@ -6,7 +6,7 @@ var prevChartL1 = null;
 var prevChartR1 = null;
 var prevChartL2 = null;
 var prevChartR2 = null;
-console.log("I AM NOT HERE");
+
 deleteButton.addEventListener("click", function(event) {
     fetch('http://localhost/delete.php', {
     method: 'GET',
@@ -30,7 +30,7 @@ deleteButton.addEventListener("click", function(event) {
 });
 
 
-var intervalID = setInterval(function() {
+setInterval(function() {
   console.log("I AM HERE");
   const runID1 = $('#runID1').val();
   const runID2 = $('#runID2').val();
@@ -228,8 +228,5 @@ var intervalID = setInterval(function() {
     console.error('There was a problem with the fetch operation:', error);
   });
 
-}, 3000);
-setTimeout(function() {
-    clearInterval(intervalID);
-}, 180000000000);
+}, 300);
   
