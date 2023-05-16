@@ -12,7 +12,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-        $sql = "SELECT FROM pi_table";
+        $sql = "SELECT * FROM pi_table";
         $result = $conn->query($sql);
         $data = array();
         // Check if any rows were returned
