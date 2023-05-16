@@ -55,6 +55,7 @@ if ($result) {
         }
         ?>
     </select>
+    <br>
     <label for="runID2">Run ID 2:</label><br>
     <select id="runID2" name="runID2">
         <?php
