@@ -6,7 +6,7 @@ var prevChartL1 = null;
 var prevChartR1 = null;
 var prevChartL2 = null;
 var prevChartR2 = null;
-
+console.log("I AM NOT HERE");
 deleteButton.addEventListener("click", function(event) {
     fetch('http://localhost/delete.php', {
     method: 'GET',
