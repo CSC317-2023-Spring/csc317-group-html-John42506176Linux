@@ -194,7 +194,13 @@ setInterval(function() {
       scales: {
         x: {
           type: 'linear',
-          position: 'bottom'
+          position: 'bottom',
+          ticks: {
+              // Include a dollar sign in the ticks
+              callback: function(value, index, ticks) {
+                  return new Date(value).toLocaleString();
+              }
+          }
         },
         y: {
           type: 'linear',
