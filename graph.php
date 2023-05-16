@@ -46,7 +46,7 @@ if ($result) {
     <div style="width: 50%; height: 30%;"><canvas id="canvasR2"></canvas></div>
     <rb></rb>
     <form id = "my-form" method="POST">
-    <label for="runID1">Run ID 1:</label><br>
+    <!-- <label for="runID1">Run ID 1:</label><br> -->
     <!-- <select id="runID1" name="runID1">
         <?php
         // Loop through the runID values and create option tags
