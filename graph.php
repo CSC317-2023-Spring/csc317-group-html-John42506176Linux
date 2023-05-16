@@ -41,9 +41,12 @@ if ($result) {
   <body>
     <div style="width: 50%; height: 30%;"><canvas id="canvasL1"></canvas></div>
     <div style="width: 50%; height: 30%;"><canvas id="canvasR1"></canvas></div>
+    <div style="width: 50%; height: 30%;"><canvas id="canvasS1"></canvas></div>
     <br>
     <div style="width: 50%; height: 30%;"><canvas id="canvasL2"></canvas></div>
     <div style="width: 50%; height: 30%;"><canvas id="canvasR2"></canvas></div>
+    <div style="width: 50%; height: 30%;"><canvas id="canvasS2"></canvas></div>
+    <br>
     <rb></rb>
     <form id = "my-form" method="POST">
     <label for="runID1">Run ID 1:</label><br>
