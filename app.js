@@ -201,6 +201,9 @@ setInterval(function() {
           position: 'left'
         }
       },
+      animation: {
+          duration: 0
+      },
     };
 
     // Create the chart
