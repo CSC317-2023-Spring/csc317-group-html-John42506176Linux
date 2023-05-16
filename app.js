@@ -37,17 +37,17 @@ setInterval(function() {
 
     let dataPointsL1 = xValues.map((x, i) => ({ x: x, y: yValues[i] }));
 
-    yValues.clear();
-    xValues.clear();
+    yValues = [];
+    xValues = [];
     json.forEach(function(obj) {
       xValues.push(Date.parse(obj['timestamp']));
       yValues.push(parseFloat(obj['rightwheel']));
     });
 
     let dataPointsR1 = xValues.map((x, i) => ({ x: x, y: yValues[i] }));
-    
-    yValues.clear();
-    xValues.clear();
+
+    yValues = [];
+    xValues = [];
     json.forEach(function(obj) {
       xValues.push(Date.parse(obj['timestamp']));
       yValues.push(parseFloat(obj['obstacle']));
@@ -181,8 +181,8 @@ setInterval(function() {
       xValues.push(Date.parse(obj['timestamp']));
       yValues.push(parseFloat(obj['leftwheel']));
     });
-    yValues.clear();
-    xValues.clear();
+    yValues = [];
+    xValues = [];
 
     let dataPointsL2 = xValues.map((x, i) => ({ x: x, y: yValues[i] }));
     json.forEach(function(obj) {
@@ -190,8 +190,8 @@ setInterval(function() {
       yValues.push(parseFloat(obj['rightwheel']));
     });
 
-    yValues.clear();
-    xValues.clear();
+    yValues = [];
+    xValues = [];
 
     let dataPointsR2 = xValues.map((x, i) => ({ x: x, y: yValues[i] }));
 
@@ -200,8 +200,8 @@ setInterval(function() {
       yValues.push(parseFloat(obj['obstacle']));
     });
     let dataPointsS2 = xValues.map((x, i) => ({ x: x, y: yValues[i] }));
-    yValues.clear();
-    xValues.clear();
+    yValues = [];
+    xValues = [];
 
     const dataL2 = {
       datasets: [{
