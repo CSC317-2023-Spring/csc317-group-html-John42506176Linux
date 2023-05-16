@@ -46,15 +46,15 @@ if ($result) {
     <div style="width: 50%; height: 30%;"><canvas id="canvasR2"></canvas></div>
     <rb></rb>
     <form id = "my-form" method="POST">
-    <!-- <label for="runID1">Run ID 1:</label><br> -->
-    <!-- <select id="runID1" name="runID1">
+    <label for="runID1">Run ID 1:</label><br>
+    <select id="runID1" name="runID1">
         <?php
         // Loop through the runID values and create option tags
-        // foreach ($runIDs as $runID) {
-        //     echo "<option value='$runID'>$runID</option>";
-        // }
+        foreach ($runIDs as $runID) {
+            echo "<option value='$runID'>$runID</option>";
+        }
         ?>
-    </select> -->
+    </select>
     <!-- <label for="runID2">Run ID 2:</label><br>
     <select id="runID2" name="runID2">
         <?php
