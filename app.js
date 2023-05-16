@@ -7,28 +7,6 @@ var prevChartR1 = null;
 var prevChartL2 = null;
 var prevChartR2 = null;
 
-deleteButton.addEventListener("click", function(event) {
-    fetch('http://localhost/delete.php', {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json'
-    }
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(json => {
-        alert("Deleted database");
-    })
-    .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
-    });
-
-});
-
 
 setInterval(function() {
   console.log("I AM HERE");
@@ -66,7 +44,7 @@ setInterval(function() {
 
     const dataL1 = {
       datasets: [{
-        label: 'Scatter Plot',
+        label: `RunID: ${runID1} Left Wheel`,
         data: dataPointsL1,
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
         trendlineLinear: {
@@ -80,7 +58,7 @@ setInterval(function() {
 
     const dataR1 = {
       datasets: [{
-        label: 'Scatter Plot',
+        label: `RunID: ${runID1} Right Wheel`,
         data: dataPointsR1,
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
         trendlineLinear: {
@@ -177,7 +155,7 @@ setInterval(function() {
 
     const dataL1 = {
       datasets: [{
-        label: 'Scatter Plot',
+        label: `RunID: ${runID2} Left Wheel`,
         data: dataPointsL1,
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
         trendlineLinear: {
@@ -191,7 +169,7 @@ setInterval(function() {
 
     const dataR1 = {
       datasets: [{
-        label: 'Scatter Plot',
+        label: `RunID: ${runID2} Right Wheel`,
         data: dataPointsR1,
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
         trendlineLinear: {
