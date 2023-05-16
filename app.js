@@ -32,6 +32,7 @@ deleteButton.addEventListener("click", function(event) {
 
 (function() {
   var intervalID = setInterval(function() {
+    console.log("I AM HERE");
     const runID1 = $('#runID1').val();
     const runID2 = $('#runID2').val();
 
