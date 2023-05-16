@@ -117,24 +117,29 @@ setInterval(function() {
 
     // Create the chart
     if (isChart1Set) {
-      prevChartL1.destroy();
-      prevChartR1.destroy();
+      prevChartL1.data = dataL1;
+      prevChartR1.data = dataR1;
+      prevChartL1.update();
+      prevChartR1.update();
     }
-    const ctx1 = document.getElementById('canvasL1').getContext('2d');
-    const ctx2 = document.getElementById('canvasR1').getContext('2d');
-    prevChartL1 = new Chart(ctx1, {
-      type: 'scatter',
-      data: dataL1,
-      options: options
-    });
+    else{
+      const ctx1 = document.getElementById('canvasL1').getContext('2d');
+      const ctx2 = document.getElementById('canvasR1').getContext('2d');
+      prevChartL1 = new Chart(ctx1, {
+        type: 'scatter',
+        data: dataL1,
+        options: options
+      });
 
-    prevChartR1 = new Chart(ctx2, {
-      type: 'scatter',
-      data: dataR1,
-      options: options
-    });
+      prevChartR1 = new Chart(ctx2, {
+        type: 'scatter',
+        data: dataR1,
+        options: options
+      });
 
-    isChart1Set = true;
+      isChart1Set = true;
+    }
+    
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
@@ -223,24 +228,28 @@ setInterval(function() {
 
     // Create the chart
     if (isChart2Set) {
-      prevChartL2.destroy();
-      prevChartR2.destroy();
+      prevChartL2.data = dataL1
+      prevChartR2.data = dataR1
+      prevChartL2.update();
+      prevChartR2.update();
     }
-    const ctx1 = document.getElementById('canvasL2').getContext('2d');
-    const ctx2 = document.getElementById('canvasR2').getContext('2d');
-    prevChartL2 = new Chart(ctx1, {
-      type: 'scatter',
-      data: dataL1,
-      options: options
-    });
+    else{
+      const ctx1 = document.getElementById('canvasL2').getContext('2d');
+      const ctx2 = document.getElementById('canvasR2').getContext('2d');
+      prevChartL2 = new Chart(ctx1, {
+        type: 'scatter',
+        data: dataL1,
+        options: options
+      });
 
-    prevChartR2 = new Chart(ctx2, {
-      type: 'scatter',
-      data: dataR1,
-      options: options
-    });
+      prevChartR2 = new Chart(ctx2, {
+        type: 'scatter',
+        data: dataR1,
+        options: options
+      });
 
-    isChart2Set = true;
+      isChart2Set = true;
+    }
   })
   .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
